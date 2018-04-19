@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<?xml-stylesheet type="text/css" href="studens.css" ?>
+<students>
+    <studen>
+        <no>001</no>
+        <name>张三</name>
+        <class>软件一</class>
+    </studen>
+    <studen>
+        <no>002</no>
+        <name>李四</name>
+        <class>软件二</class>
+    </studen>
+</students>

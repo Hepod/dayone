@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<!DOCTYPE 班级[
+        <!ELEMENT 姓名 (#PCDATA)>
+        <!ELEMENT 任教系别 (#PCDATA)>
+        <!ELEMENT 照片 (#PCDATA)>
+        <!ATTLIST教师 教师编号 ID #REQUIRED>
+        <!ATTLIST 学生 学号 ID #REQUIRED>
+        <!ATTLIST 学生 出生日期 NMTOKEN #IMPLIED>
+        <!ATTLIST 学生 班主任 IDREF #REQUIRED>
+        <!ATTLIST 学生 系别 CDATA #FIXED "计算机系">
+        <!ELEMENT 照片 EMPTY>
+        <!ATTLIST 照片 文件 ENTITY #REQUIRED>
+        <!ELEMENT 学生照片 SYSTEM "stu.jpg">
+        <!ELEMENT 教师 (姓名,任教系别)>
+        <!ELEMENT 学生 (姓名,照片)>
+        <!ELEMENT 班级 (教师+,学生+)>
+        ]>
+<班级>
+        <教师 教师编号="12345">
+                <姓名>教师一</姓名>
+                <任教系别>计算机系</任教系别>
+        </教师>
+        <学生 学号="123456" 班主任="12345" 出生日期="2018.1.1" 系别="计算机系">
+                <姓名>李四</姓名>
+                <照片 文件="stu.jpg"></照片>
+        </学生>
+</班级>
+

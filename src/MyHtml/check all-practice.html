@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全选练习</title>
+</head>
+<body>
+<input type="checkbox" name="AllorNo" onclick="selAllNo()">全选
+<input type="checkbox" name="checked">篮球
+<input type="checkbox" name="checked">足球
+<input type="checkbox" name="checked">羽毛球
+<input type="checkbox" name="checked">乒乓球
+<button value="全选" onclick="selAll()"/>
+<button value="全不选" onclick="selNo()"/>
+<button value="反选" onclick="selOther()"/>
+<script type="text/javascript">
+function selAllNo() {
+
+}
+function selAll() {
+    var AllorNo=document.getElementsByName(AllorNo);
+    for(var i;i<AllorNo.length;i++){
+        var allorno=allorno[i];
+        allorno.checked=true;
+    }
+}
+function selNo() {
+    var AllorNo=document.getElementsByName(AllorNo);
+    for(var i;i<AllorNo.length;i++){
+        var allorno=allorno[i];
+        allorno.checked=false;
+    }
+}
+function selOther() {
+    
+}
+</script>
+</body>
+</html>

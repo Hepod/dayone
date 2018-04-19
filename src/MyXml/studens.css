@@ -1,0 +1,31 @@
+studen
+{
+    width:80px;
+    height: 100px;
+    margin-top:20px;
+    display: block;
+    background-image: url(bg.jpg);
+}
+no
+{
+    border: dotted 3px #ff0000;
+    display: list-item;
+    list-style:square inside url(bg1.jpg);
+    font-size: 16px;
+    font-style: italic;
+}
+name
+{
+    background-color:#f8f8f8;
+    Color:green;
+    font-weight:bold;
+    display: block;
+}
+class
+{
+    border: dotted 3px #ff0000;
+    width:78px;
+    height:48px;
+    display: list-item;
+    list-style:square inside url(bg1.jpg);
+}

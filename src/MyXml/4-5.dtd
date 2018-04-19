@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312" ?>
+        <!ELEMENT 姓名 (#PCDATA)>
+        <!ELEMENT 性别 (#PCDATA)>
+        <!ELEMENT 固定电话 (#PCDATA)>
+        <!ELEMENT 移动电话 (#PCDATA)>
+        <!ATTLIST 联系方式 方式 CDATA #REQUIRED>
+        <!ELEMENT 联系方式 (移动电话|移动电话,固定电话)
+        <!ELEMENT 员工 (姓名,性别,联系方式)>
+        <!ELEMENT 员工列表 (员工+)>
