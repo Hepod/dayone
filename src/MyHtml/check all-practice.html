@@ -10,29 +10,43 @@
 <input type="checkbox" name="checked">足球
 <input type="checkbox" name="checked">羽毛球
 <input type="checkbox" name="checked">乒乓球
-<button value="全选" onclick="selAll()"/>
-<button value="全不选" onclick="selNo()"/>
-<button value="反选" onclick="selOther()"/>
+<br>
+<button onclick="selAll()">全选</button>
+<button onclick="selNo()">全不选</button>
+<button onclick="selOther()">反选</button>
 <script type="text/javascript">
 function selAllNo() {
-
+    var AllNo1=document.getElementsByName("AllorNo")
+    if(AllNo1[0].checked){
+       selAll();
+    }else{
+        selNo();
+    }
 }
 function selAll() {
-    var AllorNo=document.getElementsByName(AllorNo);
-    for(var i;i<AllorNo.length;i++){
-        var allorno=allorno[i];
-        allorno.checked=true;
+    var All=document.getElementsByName("checked");
+    for(var i=0;i<All.length;i++){
+        var all=All[i];
+        all.checked=true;
     }
 }
 function selNo() {
-    var AllorNo=document.getElementsByName(AllorNo);
-    for(var i;i<AllorNo.length;i++){
-        var allorno=allorno[i];
-        allorno.checked=false;
+    var No=document.getElementsByName("checked");
+    for(var i=0;i<No.length;i++){
+        var no=No[i];
+        no.checked=false;
     }
 }
 function selOther() {
-    
+    var Other=document.getElementsByName("checked");
+    for(var i=0;i<Other.length;i++){
+        var other=Other[i];
+        if(!other.checked){
+            other.checked=true;
+        }else{
+            other.checked=false;
+        }
+    }
 }
 </script>
 </body>
